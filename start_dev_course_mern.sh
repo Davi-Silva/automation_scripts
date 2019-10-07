@@ -1,6 +1,7 @@
-$start_dev.sh
 #!/bin/sh
-cd /home/leanon/Documents/Dev/Davi
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+cd "$parent_path"
+echo "$parent_path"
 mkdir course
 cd course
 code .
